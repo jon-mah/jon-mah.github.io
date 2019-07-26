@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Jonathan Mah's Website</title>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="myScrollspy">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="navbar"><a href="#">Home</a></li>
+        <li><a class="page-scroll" href="#About">About</a></li>
+        <li><a class="page-scroll" href="#Research">Research</a></li>
+        <li><a class="page-scroll" href="#Projects">Projects</a></li>
+        <li><a class="page-scroll" href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Jonathan Mah's Website</h1>
+    <p>Undergraduate researcher and computational biologist.</p>
+  </div>
+</div>
+
+<!-- About Section -->
+    <section id="About" class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>About</h1>
+          </div>
+          <p>I'm Jonathan Mah, a third-year student at the University
+             of Washington studying applied and computational mathematical
+             sciences, biochemistry, and microbiology. This is my personal
+             website, and I hope to keep it updated with projects from my
+             coursework and research.</p>
+        </div class="row">
+      </div class="container">
+    </section id="about" class="about-section">
+
+<!-- Research Section -->
+    <section id="Research" class="research-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Research</h1>
+          </div>
+          <p>I'm currently an undergraduate researcher in Dr. Jesse Bloom's lab,
+             in the Basic Sciences Division of the Fred Hutchinson Cancer
+             Research Center. I'm working with my graduate mentor, Sarah Hilton,
+             on identifying sites under positive selection in the influenza virus
+             surface protein, Hemagglutinin (HA).</p>
+        </div class="row">
+      </div class="container">
+    </section id="about" class="about-section">
+
+<!-- Projects Section -->
+    <section id="Projects" class="projects-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Projects</h1>
+          </div>
+          <p>Here is a collection of my past and current projects.
+             Unless otherwise noted, these projects are
+             <b> not peer-reviewed,</b> and were completed as part of
+             of the requirements for a course I have taken.
+          </p>
+          <p>
+            <b> Past Project: </b>
+            <a href="https://colab.research.google.com/drive/1-7T2RvQ7HK0yNMVfZYS9jvyXKa4dQe3x">
+              Case study: Digital logic circuits in yeast with CRISPR-dCas9 NOR gates
+            </a>
+            is a case study of an article published by <i> Gander et. al. </i>
+            You can find the original article
+            <a href="https://www.nature.com/articles/ncomms15459">
+              here.
+            </a>
+            You can find the manuscript of our case study
+            <a href="https://github.com/jon-mah/jon-mah.github.io/blob/master/Files/Amath_422_manuscript.pdf">
+              here.
+            </a>
+          </p>
+          <p>
+            <b> Past Project: </b>
+            <a href="https://github.com/jon-mah/influenzaMarkov">
+              influenzaMarkov
+            </a>
+            is a discrete-time Markov process for predicting influenza evolution.
+            This project served as the term-paper for MATH 381: Discrete
+            Mathematical Modeling. You can find the manuscript
+            <a href="https://github.com/jon-mah/influenzaMarkov/blob/master/Manuscript/influenzaMarkov_manuscript.pdf">
+              here.
+            </a>
+          </p>
+          <p>
+            <b> Past Project: </b>
+            <a href="https://github.com/jon-mah/SIV_infectionDynamics">
+              SIV_infectionDynamics
+            </a>
+            is a Susceptible-Infected-Vaccinated model for Influenza
+            infection dynamics. This project also served as the
+            term-paper for AMATH 383: Introduction to Continuous Modeling.
+            You can find the manuscript
+            <a href="https://github.com/jon-mah/SIV_infectionDynamics/blob/master/Manuscript/SIV_infectionDynamics_manuscript.pdf">
+              here.
+            </a>
+          </p>
+        </div class="row">
+      </div class="container">
+    </section id="projects" class="projects-section">
+
+<!-- Contact Section -->
+    <section id="Contact" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Contact</h1>
+          </div>
+          <p> You can contact me at
+            <a href="mailto:jonmah@uw.edu.com" target="_top">jonmah@uw.edu</a>
+          </p>
+          <p> You can find my GitHub
+            <a href="https://github.com/jon-mah" target="_top">here.</a>
+          </p>
+
+        </div class="row">
+      </div class="container">
+    </section id="Contact" class="contact-section">
+
+
+<footer class="container-fluid text-center">
+  <p>Website formatting based on Bootstrap template</p>
+</footer>
+
+</body>
+</html>

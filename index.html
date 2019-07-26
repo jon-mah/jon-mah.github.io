@@ -1,166 +1,318 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>Jonathan Mah's Website</title>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+<HEAD>
 
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 15px;
-    }
-  </style>
-</head>
-<body>
+<TITLE>Jonathan Mah</TITLE>
+<!--This website design is based on Joshua Plotkin's website, [here](http://mathbio.sas.upenn.edu/) -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top" id="myScrollspy">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="navbar"><a href="#">Home</a></li>
-        <li><a class="page-scroll" href="#About">About</a></li>
-        <li><a class="page-scroll" href="#Research">Research</a></li>
-        <li><a class="page-scroll" href="#Projects">Projects</a></li>
-        <li><a class="page-scroll" href="#Contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<STYLE type="text/css">
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Jonathan Mah's Website</h1>
-    <p>Undergraduate researcher and computational biologist.</p>
-  </div>
-</div>
+body
+{
+margin: 20px;
+padding: 20px;
+font-family: "Avenir", sans-serif, Courier, Serif;
 
-<!-- About Section -->
-    <section id="About" class="about-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>About</h1>
-          </div>
-          <p>I'm Jonathan Mah, a third-year student at the University
-             of Washington studying applied and computational mathematical
-             sciences, biochemistry, and microbiology. This is my personal
-             website, and I hope to keep it updated with projects from my
-             coursework and research.</p>
-        </div class="row">
-      </div class="container">
-    </section id="about" class="about-section">
+}
 
-<!-- Research Section -->
-    <section id="Research" class="research-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Research</h1>
-          </div>
-          <p>I'm currently an undergraduate researcher in Dr. Jesse Bloom's lab,
-             in the Basic Sciences Division of the Fred Hutchinson Cancer
-             Research Center. I'm working with my graduate mentor, Sarah Hilton,
-             on identifying sites under positive selection in the influenza virus
-             surface protein, Hemagglutinin (HA).</p>
-        </div class="row">
-      </div class="container">
-    </section id="about" class="about-section">
+DIV.content
+{
+border: 0px solid #5f5f5f;
+width: 525px;
+margin: 0;
+padding: 1em;
+position: absolute;
+background-color: #FFFFFF;
+left: 240px;
+top: 20px;
+}
 
-<!-- Projects Section -->
-    <section id="Projects" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Projects</h1>
-          </div>
-          <p>Here is a collection of my past and current projects.
-             Unless otherwise noted, these projects are
-             <b> not peer-reviewed,</b> and were completed as part of
-             of the requirements for a course I have taken.
-          </p>
-          <p>
-            <b> Past Project: </b>
-            <a href="https://colab.research.google.com/drive/1-7T2RvQ7HK0yNMVfZYS9jvyXKa4dQe3x">
-              Case study: Digital logic circuits in yeast with CRISPR-dCas9 NOR gates
-            </a>
-            is a case study of an article published by <i> Gander et. al. </i>
-            You can find the original article
-            <a href="https://www.nature.com/articles/ncomms15459">
-              here.
-            </a>
-            You can find the manuscript of our case study
-            <a href="https://github.com/jon-mah/jon-mah.github.io/blob/master/Files/Amath_422_manuscript.pdf">
-              here.
-            </a>
-          </p>
-          <p>
-            <b> Past Project: </b>
-            <a href="https://github.com/jon-mah/influenzaMarkov">
-              influenzaMarkov
-            </a>
-            is a discrete-time Markov process for predicting influenza evolution.
-            This project served as the term-paper for MATH 381: Discrete
-            Mathematical Modeling. You can find the manuscript
-            <a href="https://github.com/jon-mah/influenzaMarkov/blob/master/Manuscript/influenzaMarkov_manuscript.pdf">
-              here.
-            </a>
-          </p>
-          <p>
-            <b> Past Project: </b>
-            <a href="https://github.com/jon-mah/SIV_infectionDynamics">
-              SIV_infectionDynamics
-            </a>
-            is a Susceptible-Infected-Vaccinated model for Influenza
-            infection dynamics. This project also served as the
-            term-paper for AMATH 383: Introduction to Continuous Modeling.
-            You can find the manuscript
-            <a href="https://github.com/jon-mah/SIV_infectionDynamics/blob/master/Manuscript/SIV_infectionDynamics_manuscript.pdf">
-              here.
-            </a>
-          </p>
-        </div class="row">
-      </div class="container">
-    </section id="projects" class="projects-section">
-
-<!-- Contact Section -->
-    <section id="Contact" class="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Contact</h1>
-          </div>
-          <p> You can contact me at
-            <a href="mailto:jonmah@uw.edu.com" target="_top">jonmah@uw.edu</a>
-          </p>
-          <p> You can find my GitHub
-            <a href="https://github.com/jon-mah" target="_top">here.</a>
-          </p>
-
-        </div class="row">
-      </div class="container">
-    </section id="Contact" class="contact-section">
+DIV.bar
+{
+border: 0px solid #5f5f5f;
+width: 200px;
+height: 300px;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 65px;
+top: 45px;
+text-align: right;
+}
 
 
-<footer class="container-fluid text-center">
-  <p>Website formatting based on Bootstrap template</p>
-</footer>
+p.link
+{
+color: black;
+font-family: "Avenir", sans-serif, Courier, Serif;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+}
 
-</body>
+
+a:link, a:link.inlink, a:visited.inlink, a:visited
+{
+color: #0000FF;
+}
+
+
+a:link.minlink, a:visited.minlink
+{
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover, a:hover.inlink, a:hover.minlink
+{
+color: #EEC900;
+text-decoration: none;
+font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+margin: 0;
+padding: 0;
+left: 50px;
+bottom: 20px;
+  }
+
+
+
+
+#coursework
+{
+display: none;
+}
+
+#abstract
+{
+display: block;
+}
+
+#research
+{
+display: none;
+}
+
+#projects
+{
+display: none;
+}
+
+#media
+{
+display: none;
+}
+
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+
+function homeShow()
+{
+document.getElementById("abstract").style.display="block";
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function courseworkShow()
+{
+document.getElementById("coursework").style.display="block";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function researchShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="block";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function projectsShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="block";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function mediaShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("media").style.display="block";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+
+
+}
+
+</SCRIPT>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32460469-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</HEAD>
+
+
+<BODY>
+
+
+<!--<img src="jonmah.jpg" width="12%" height="12%"><br>-->
+<DIV class="bar">
+
+
+<P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
+<P class="link"><A href="#" class="minlink" onclick="researchShow();">Research</A></P>
+<P class="link"><A href="#" class="minlink"
+       onclick="projectsShow();">Brief CV</A></P>
+<P class="link"><A href="#" class="minlink"
+       onclick="courseworkShow();">Contact</A></P>
+
+</DIV>
+
+
+
+<DIV class="content">
+
+
+
+  <DIV id="abstract">
+
+<h2> Jonathan Mah </h2>
+<hr>
+<img src = "jonmah.jpg" width = "30%" height = "30%" style="float:left;margin:0 15px 0 0px;">
+I am a computational evolutionary biologist interested in investigating
+  fundamental basic questions regarding protein evolution, especially in microbial
+  pathogens. I'm currently a fourth-year undergraduate student at the University of Washington
+  working with
+  <a href="https://research.fhcrc.org/bloom/en.html"
+    class = "minlink">Dr. Jesse Bloom</a>
+  on experimentally informed models for
+  protein evolution in viruses.
+
+  Additionally, from June 2019 to August 2019, I worked with
+  <a href="https://www.eeb.ucla.edu/Faculty/Lohmueller/"
+    class = "minlink">Professor Kirk Lohmueller</a>
+  on inferring the distribution of fitness effects in canine evolutionary
+  histories as part of the
+  <a href="https://qcb.ucla.edu/big-summer/"
+    class = "minlink">Bruins-In-Genomics Summer Undergraduate Research Program</a>
+  at UCLA.
+
+    </DIV>
+
+  <DIV id="coursework">
+
+<h2>Contact</h2>
+<hr>
+<ul style="list-style: none;">
+<li>E-mail:
+  <a href="mailto:jonmah@uw.edu"
+    class = "minlink">jonmah@uw.edu</a><br>
+<!-- <li>Office: Stanley Hall, 260K<br>Berkeley, CA 94720<br> -->
+<li>Github:
+  <a href="https://github.com/jon-mah"
+    class = "minlink"> jon-mah</a><br>
+
+</ul>
+
+You can also find me on Twitter, <a href="https://twitter.com/jonmah_compbio" class =
+    "minlink">@jonmah_compbio</a>. <br> <br>
+
+</DIV>
+
+
+<DIV id="research">
+<h2>Research</h2>
+    <hr>
+
+Here are some of the projects I've worked on over the past several
+  years.
+  <br>
+ <hr>
+<em> Identifying Sites Under Diversifying Selection on Influenza Hemagglutinin </em> [Manuscript in Preparation]
+  <br><br> Jonathan Mah, Sarah Hilton, Jesse Bloom
+<br><br>
+
+
+ <hr>
+<em> Impact of Domestication on the Distribution of Fitness Effects in Canine Lineages </em> [Manuscript in Preparation] <br><br> Eduardo Amorim*, Jesse Garcia*, Miguel Guardado*, Jonathan Mah*, Kirk Lohmueller
+<br><br>
+
+ <hr>
+
+* Denotes equal contribution.
+
+  </DIV>
+
+  <DIV id="coursework">
+
+<h2>Contact</h2>
+<hr>
+<ul>
+<li>e-mail: afeder@stanford.edu
+</ul>
+Department of Biology<br>
+371 Serra St.<br>
+Stanford University<br>
+Stanford, CA 94305-5020<br> <br>
+
+</DIV>
+
+<DIV id="projects">
+
+<h2>Brief CV </h2>
+
+<hr>
+<ul>
+<li><b>Current: BS Applied & Computational Mathematical Sciences, Biochemistry, Microbiology, 2016-present<br>
+</ul>
+
+<hr>
+I have been fortunate to receive funding support from:<br>
+<a href = "https://microbiology.washington.edu/">
+<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCFJZw8xheAbrC4--af3ZHAvhZNIPQCaMxJGnCuJnbxTcFZ_LQ" width="20%" height="20%" style="float:left margin: 2px"></a>
+&nbsp;
+<a href = "https://www.washington.edu/uaa/excelling/mary-gates-endowment/">
+<img src= "mary_gates_endowment.PNG" width="50%" height="50%" style="float:left margin: 2px"></a>
+&nbsp;
+<a href = "https://www.gs.washington.edu/index.htm">
+<img src = "https://www.gs.washington.edu/images/newlogo2.png" width="40%" height="40%" style="float:left margin: 2px"></a>
+&nbsp;
+<a href = "https://qcb.ucla.edu/big-summer/">
+<img src = "https://qcb.ucla.edu/wp-content/uploads/sites/14/2018/09/BIG-Summer-Website-Top-Photo-1-357x321.jpg" width="25%" height="25%" style="float:left margin: 2px"></a>
+
+<hr>
+[<a href="CV_current.pdf" class="minlink" onClick="ga('send', 'pageview', 'cv.pdf');">Download full CV</a>]
+  </DIV>
+
+</DIV>
+
+
+</BODY>
+
 </html>
