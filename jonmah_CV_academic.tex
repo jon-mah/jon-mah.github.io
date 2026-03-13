@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\usepackage{graphicx}
+\usepackage{ctable}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=0.5in, right=0.5in, bottom=0.5in, top=0.5in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\LARGE{\textbf{Jonathan Mah}}
+
+% \vspace{0.1in}
+
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype. 
+
+
+\begin{tabular}{l l}
+\specialrule{.3em}{.2em}{.2em}
+1231 S Bundy Dr. Apt 5, Los Angeles CA, 90025 \\
+\textit{jonmah@g.ucla.edu}, \textit{jonathan.c.mah@gmail.com} \\
+Personal website: jon-mah.github.io \\
+(425) 361-3848
+\end{tabular}
+\end{center}
+
+% \vspace{1em}
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{tabular}{@{} l l}
+	\Large{Education}    & \textbf{University of California, Los Angeles} \hfill Sep 2020 - Present \\
+		& Ph.D. Bioinformatics \hfill Expected June 2026 \\	
+	
+\tabularnewline	
+	
+	& \textbf{University of Washington, Seattle} \hfill June 2016 - June 2020 \\
+	& B.S. Biochemistry (With Honors), and Microbiology (With Distinction) \\
+\tabularnewline		
+
+	\Large{Research} & \textbf{Thesis Research, Bioinformatics IDP} \hfill June 2021 - Present \\
+	& \textit{Coadvised by Professor Kirk Lohmueller and Professor Nandita Garud.} \\
+	& Statistical methods for inference of demography and selection within and across. \\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Comparative population genomics in the Human gut microbiome.
+      			\item Quantifying the systematic impact of sample size on SFS-based inference of population demographic history.
+      			\item Testing for differences in population genetics summary statistics between commonly-used datasets.
+			\end{itemize} 
+    	\end{minipage} \\	
+
+\tabularnewline	
+
+	& \textbf{First Year Lab Rotations, Bioinformatics IDP} \hfill Sep 2020 - June 2021 \\
+	& \textit{Advised by Professor Sriram Sankararaman, University of California, Los Angeles.} \\
+	& Project: Inference of Maximum Likelihood Network Orientation for Admixture Graphs. \\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Performed simulation study modeling admixture graphs and implemented optimization method for maximum likelihood network orientations.
+			\end{itemize} 
+    	\end{minipage} \\		
+\tabularnewline	
+	
+	& \textit{Advised by Professor Nandita Garud, University of California, Los Angeles.} \\
+	& Project: Demographic Inference for Common Commensal Gut Bacteria. \\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Developed bioinformatics pipeline to infer population demographic histories from pseudo-isolate gut microbiome samples at single-strain resolution.
+			\end{itemize} 
+    	\end{minipage} \\	
+\tabularnewline	
+
+	& \textit{Advised by Professor Kirk Lohmueller, University of California, Los Angeles.} \\
+	& Project: Detection of Recessive Deleterious Mutations \\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Developed novel statistical method to detect recessive deleterious mutations using departures from Hardy-Weinberg Equilibrium.
+			\end{itemize} 
+    	\end{minipage} \\	
+\tabularnewline	
+	
+	& \textbf{Honors Thesis Research, Department of Microbiology} \hfill Feb 2018 - June 2020 \\
+		& \textit{Advised by Dr. Jesse Bloom, Fred Hutchinson Cancer Research Center}. \\
+		& Project: Identifying Sites Under Positive Selection on Viral Proteins. \\
+		& 	\begin{minipage} [t] {0.85 \textwidth} 
+     			\begin{itemize} 
+     				\itemsep-0.4em 
+      				\item Implemented random-effects-likelihood approach towards inferring site-specific positive selection pressure on viral proteins.
+				\end{itemize} 
+    		\end{minipage} \\
+    		
+	\tabularnewline    		
+    		
+		& \textbf{UCLA Bruins-in-Genomics SPUR} \hfill June 2019 - August 2019 \\
+      	& \textit{Advised by Professor Kirk Lohmueller, University of California, Los Angeles}. \\
+      	& Project: Quantifying the Statistical Power in the Inference of the Evolution of the \\
+      	& Distribution of Fitness Effects in Canine Lineages. \\
+     	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     			\begin{itemize} 
+     				\itemsep-0.4em 
+      				\item Performed forward population genetics simulations to model canine evolution.
+      				\item Developed bioinformatics pipeline to infer demographic parameters and the underlying distribution of fitness effects in simulated and empirical canine lineages.
+      			\end{itemize} 
+    		\end{minipage} \\
+
+\end{tabular}	
+
+\noindent \begin{tabular}{@{} l l}
+
+	\Large{Publications} & \underline{1.} \textbf{Mah, J.C.}, Lohmueller, K.E., Garud, N. \\
+	& ``Inference of the Demographic Histories and Selective Effects of \\
+	& Human Gut Commensal Microbiota Over the Course of Human History". \\
+	& \textit{Molecular Biology and Evolution} (2025)\\
+	
+
+	\tabularnewline    
+	\Large{Preprints}	& \underline{1.} \textbf{Mah, J.C.} and Lohmueller, K.E. \\
+	& ``Inference of population demographic history captures differing evolutionary \\
+	& signals based on the number of individuals in the dataset." \textit{in preparation} (2026) \\
+	\tabularnewline    
+	
+	& \underline{2.} Lin, M., Chakraborty, S., Amorim, C.E.G., Nigenda-Morales, S.F., Beichman, A.C., \\
+	& Nunez-Valencia, P.G., \textbf{Mah, J.C.,} Robinson, J.A., Kyriazis, C.C., Huber, C.D., \\
+	& Webb, A.E., Kocher, S.D., Archer, F.L., Moreno-Estrada, A., Wayne, R.K., \\
+	& Lohmueller, K.E. ``The distribution of fitness effects varies phylogenetically \\
+	& across animals." \textit{BiorXiv} (2025). \\
+	\tabularnewline    
+	
+	& \underline{3.} Amorim, C.E.G., Di, C., Lin, M., Marsden, C. Del Carpio, C.A., \\
+	& \textbf{Mah, J.C.,} Robinson, J., Kim, B.Y., Mooney, J.A., Cornejo, O.E., Lohmueller, K.E. \\ 
+	& ``Evolutionary consequences of domestication on the selective effects of new amino  \\
+	& acid changing mutations in canids." \textit{BiorXiv} (2024) \\
+	\tabularnewline    
+
+	\Large{Teaching and} & \textbf{Department of Ecology and Evolutionary Biology, UCLA} \\
+	\Large{Outreach } & Graduate Teaching Assistant for EEB 121: Molecular Evolution. \hfill Aut 2024\\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Facilitated two 20-person discussion sections.
+      			\item Designed theoretical and applied molecular evolution problem-solving exercises.
+      			\item Graded bi-weekly homework essays.
+      		\end{itemize} 
+      	\end{minipage} \\	
+& Graduate Teaching Assistant for EEB 135/235: Population Genetics. \hfill Spring 2022, 2024, 2025\\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Facilitated two 15-person discussion sections.
+      			\item Assisted in writing, grading, and proctoring written examinations.
+      			\item Wrote and graded weekly homework assignments.
+      			\item Developed comprehensive lesson plans for combined undergraduate and graduate population genetics course.
+      		\end{itemize} 
+      	\end{minipage} \\	
+
+    & \textbf{Graduate Student Association, UCLA} \hfill September 2021 - 2023 \\
+    & Biological Sciences Council, Bioinformatics Representative. \\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Managed a yearly budget of $\approx \$1500$ to fund interdepartmental social events.
+      			\item Organized professional development workshops for UCLA graduates students in the Biosciences, e.g., Microsoft Office, LaTeX, Unix processing.
+      			\item Funded several DEI programs supporting queer and disabled graduate student workers in the Biosciences.
+      		\end{itemize} 
+      	\end{minipage} \\    
+	& \textbf{Undergraduate Research Program, University of Washington} \hfill Oct 2019 - June 2020 \\
+	& Undergraduate Research Leader. \\
+	& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Organized outreach activities to increase involvement in undergraduate research.
+      			\item One-to-one mentoring through ``The Brotherhood Initiative", a program which connects male students of color to facilitate increased access to undergraduate research opportunities.
+      		\end{itemize} 
+      	\end{minipage} \\
+    & \textbf{School of Medicine, University of Washington} \hfill Sep 2019 - Dec 2019\\
+	& Undergraduate Teaching Assistant for MICROM 302: General Microbiology Laboratory. \\
+		& 	\begin{minipage} [t] {0.85 \textwidth} 
+     		\begin{itemize} 
+     			\itemsep-0.4em 
+      			\item Facilitated a lecture and laboratory course for two sections of 16-24 students.
+      			\item Assisted in writing, grading, and proctoring written examinations.
+     			\item Assisted in testing, designing, and proctoring practical examinations.
+      		\end{itemize} 
+      		\end{minipage} \\ 
+\end{tabular}
+		
+\noindent \begin{tabular}{@{} l l}
+			\Large{Awards \& }    & \textbf{Dissertation Year Fellowship} \hfill July 2025 - June 2026\\		
+	\Large{Fellowships}    & Division of Graduate Education, UCLA \\
+		& \textbf{Systems in Integrative Biology T32 Training Grant} \hfill Oct 2021 - Oct 2023\\
+		& Quantitative and Computational Biology, UCLA \\		
+		& \textbf{UCLA First-year GPB Fellowship} \hfill July 2020 - June 2021\\	
+		& Graduate Programs in Biosciences, UCLA \\
+		& \textbf{Washington Research Foundation Fellowship} \hfill Oct 2019 - June 2020\\
+		& Washington Research Foundation \\
+		& \textbf{Herschel-Roman Scholarship} \hfill Sep 2019 - June 2020\\
+		& Department of Genome Sciences, University of Washington \\
+ 		& \textbf{Undergraduate Research Award} \hfill Dec 2018 - Aug 2019 \\
+ 		& Department of Microbiology, University of Washington \\
+		& \textbf{Mary Gates Research Scholarship} \hfill Dec 2018 - June 2019\\
+		& Mary Gates Endowment \\
+
+	\tabularnewline		
+
+	\Large{Selected} & \underline{1.} \textbf{Mah, J.C.}, Lohmueller, K.E.\\
+	\Large{Presentations} & How does the number of individuals studied influence the \\
+	& evolutionary stories we infer from population genetic data? \textit{Southern California} \\
+	& \textit{Evolutionary Genetics and Genomics Meeting.} Los Angeles, CA (2026). Oral.\\
+	& \underline{2.} \textbf{Mah, J.C.}, Lohmueller, K.E., Garud, N. \\
+	& Inference of Selection and Demography in the Human Gut Microbiome. \textit{Population,} \\
+	& \textit{Evolutionary, and Quantitative Genetics.} Washington DC., (2024). Poster.\\
+	& \underline{3.} \textbf{Mah, J.C.}, Lohmueller, K.E., Garud, N. \\ 
+	& Inference of demographic histories and distributions of fitness effects of\\
+	&  deleterious mutations from human gut microbiomes. \\
+	& \textit{Quantitative and Computational Biology Symposium.} Los Angeles, CA (2023). Oral\\
+	& \underline{4.} \textbf{Mah, J.C.}, Lohmueller, K.E., Garud, N. \\ 
+	& Inference of the Demographic History of Commensal Gut Microbes. \\
+	& \textit{Population, Evolutionary, } \textit{and Quantitative Genetics.} Pacific Grove, CA (2022). Poster.\\
+	& \underline{5.} \textbf{Mah, J.C.}, Hilton, S.K., Bloom, J.D. \\
+	& Identifying Sites Under Positive Selection on Viral Proteins. \\
+	& \textit{The Allied Genetics Conference.} Online (2020). Oral Presentation \\
+	& \underline{6.} Guardado, M.A.*, \textbf{Mah, J.C.*}, Garcia, J.A., Amorim, C.E.G., Lohmueller, K.E. \\
+	& Quantifying the Statistical Power in the Inference of the Evolution of the \\
+	& Distribution of Fitness Effects in Canine Lineages. \textit{UCLA Bruins-In-Genomics} \\
+	& \textit{Summer Program for Undergraduate Research Symposium}. Los Angeles, CA (2019). \\
+	& Poster. \\
+	& \underline{7.} \textbf{Mah, J.C.}, Hilton, S.K., Bloom, J.D. Identifying Sites Under Positive Selection\\
+	& on Influenza Hemagglutinin. \textit{University of Washington Undergraduate Research} \\
+	& \textit{Symposium.} Seattle, WA (2019). Poster. \\
+
+	\tabularnewline   
+\end{tabular}	
+
+
+%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The reference section has links to your references' websites and email addresses.
+
+% \noindent \begin{tabular}{@{} l l l}
+%  \Large{References} & \href{http://www.professorone.com}{Professor One} & 
+%  \href{http://www.professortwo.com}{Professor Two} \\
+%  & Department Name &  Department Name  \\
+%  & University Name &  University Name \\
+%  & \small{\href{mailto:prof1@email.com}{prof1@email.com},+1\,(123)\,456-7899} &  \small{\href{mailto:prof2@email.com}{prof2@email.com},+1\,(987)\,654-3210} \\
+%  && \\
+%   & \href{http://www.professorthree.com}{Professor Three} & \href{http:// www.professorfour.com}{Professor Four}  \\
+%   & Department Name &  Department Name \\
+%   & University Name &  University Name \\
+%   & \small{\href{mailto:prof3@email.com}{prof3@email.com},+1\,(123)\,789-1011} &  \small{\href{mailto:prof4@email.com}{prof4@email.com},+1\,(789)\,456-9879} \\
+%  \end{tabular}
+
+\end{document}
+
